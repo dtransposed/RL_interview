@@ -1,6 +1,6 @@
 How to run:
-    1. Install dependencies.
-    2. Run main script.
+    1. Install dependencies from requirements.txt.
+    2. Run main.py script.
 
 I have decided to tackle the FrozenLake8x8 challenge, mostly due to the constrained computing resources.
 The algorithm and the model are really minimal, but they reliably solve the environment for both:
@@ -8,6 +8,4 @@ The algorithm and the model are really minimal, but they reliably solve the envi
  2. is_slippery = False
 
 No tests are provided, I do not think that such a simple training script requires tests.
-I spent a significant amount of time setting up the dockerfile, but since lately gym is being very weakly supported,
-it took me a lot of time to try to find a good image / setup my own working one. Given just a handful of requirements,
-I do not think it is necessary.
+Given just a handful of requirements, I do not think that creating a dockerfile is necessary.
