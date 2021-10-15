@@ -30,8 +30,6 @@ if __name__ == '__main__':
         action_space=environment.action_space.n)
 
     logger = Logger()
-
-    loss = nn.MSELoss()
     optimizer = torch.optim.Adam(agent.model.parameters(), lr=args.lr)
 
     for episode in range(args.no_episodes):
