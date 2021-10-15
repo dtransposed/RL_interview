@@ -80,7 +80,7 @@ if __name__ == '__main__':
     while True:
         environment.render()
         state = one_hot_encode(state, environment.observation_space.n)
-        action, Q = agent.take_action(state, environment)
+        action, _ = agent.take_action(state, environment)
 
         new_state, reward, done, _ = environment.step(action)
 
